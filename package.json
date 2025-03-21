@@ -1,0 +1,32 @@
+{
+  "name": "steel_brain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-node ./src/teste.ts",
+    "dev": "ts-node-dev src/index.ts",
+    "start": "ts-node ./src/index.ts",
+    "build": "tsup src/index.ts --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/axios": "^0.9.36",
+    "axios": "^1.8.4",
+    "colors": "^1.4.0",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "fs": "^0.0.1-security",
+    "together-ai": "^0.13.0",
+    "ts-lib": "^0.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  }
+}
