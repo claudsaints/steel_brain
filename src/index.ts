@@ -1,4 +1,4 @@
-import SteelClient from "./clients/SteelClient";
+import SteelClient from "./class/SteelClient";
 
 const steelClient = new SteelClient();
 

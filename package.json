@@ -4,9 +4,11 @@
   "main": "index.js",
   "scripts": {
     "test": "ts-node ./src/teste.ts",
+    "clean": "del /s /q build",
     "dev": "ts-node-dev src/index.ts",
-    "start": "ts-node ./src/index.ts",
-    "build": "tsup src/index.ts --minify"
+    "start": "npm run clean && npm run build && node build/index.js",
+
+    "build": "tsc --build"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,7 @@
     "discord.js": "^14.18.0",
     "dotenv": "^16.4.7",
     "fs": "^0.0.1-security",
+    "glob": "^11.0.1",
     "together-ai": "^0.13.0",
     "ts-lib": "^0.0.5"
   },
